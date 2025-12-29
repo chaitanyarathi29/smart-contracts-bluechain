@@ -95,7 +95,7 @@ interface IProjectRegistry {
     );
 }
 
-// ==================== STEP 2: MRV VERIFICATION API ====================
+//STEP2:MRV VERIFICATIONAPI
 
 interface IMRVVerification {
     
@@ -195,7 +195,7 @@ interface IMRVVerification {
         returns (uint256[] memory);
 }
 
-// ==================== STEP 3: CARBON TOKEN API ====================
+//STEP3:CARBONTOKENAPI
 
 interface ICarbonToken {
     
@@ -232,14 +232,14 @@ interface ICarbonToken {
         uint256 _tokenId
     ) external;
     
-    // ==== Standard ERC20 Functions ====
+    //StandardERC20Functions 
     function transfer(address _to, uint256 _value) external returns (bool);
     function transferFrom(address _from, address _to, uint256 _value)
         external
         returns (bool);
     function approve(address _spender, uint256 _value) external returns (bool);
     
-    // ==== Query Functions ====
+    //Query Functions
     function balanceOf(address account) external view returns (uint256);
     function allowance(address owner, address spender) external view returns (uint256);
     function totalSupply() external view returns (uint256);
@@ -254,15 +254,15 @@ interface ICarbonToken {
     );
 }
 
-// ==================== STEP 4: VALIDATOR STAKING API ====================
+//STEP4:VALIDATORSTAKINGAPI
 
 interface IValidatorStaking {
     
-    // ==== Admin Functions ====
+    //AdminFunctions
     function setVerificationContract(address _verificationContract) external;
     function deactivateValidator(uint256 _validatorId) external;
     
-    // ==== Validator Functions ====
+    // ValidatorFunctions
     /**
      * Register as validator by staking 32 ETH
      * Grants cryptographic certificate for validation rights
@@ -280,7 +280,7 @@ interface IValidatorStaking {
      */
     function withdrawStake(uint256 _validatorId) external;
     
-    // ==== Verification-only Functions ====
+    //Verification-onlyFunctions
     /**
      * Slash validator certificate (called by MRVVerification)
      * Penalizes incorrect block approvals
@@ -288,7 +288,7 @@ interface IValidatorStaking {
      */
     function slashValidator(uint256 _validatorId) external;
     
-    // ==== Query Functions ====
+    //QueryFunctions
     function getValidator(uint256 _validatorId) external view returns (
         uint256 validatorId,
         address validatorAddress,
@@ -326,7 +326,7 @@ interface IValidatorStaking {
         returns (uint256[] memory);
 }
 
-// ==================== STEP 5: PERMISSIONED AMM API ====================
+//STEP 5:PERMISSIONED AMM API 
 
 interface IPermissionedAMM {
     
@@ -431,11 +431,11 @@ interface IPermissionedAMM {
         returns (uint256[] memory);
 }
 
-// ==================== STEP 6: CARBON RETIREMENT API ====================
+//STEP6:CARBON RETIREMENT API
 
 interface ICarbonRetirement {
     
-    // ==== Industry Functions ====
+    //IndustryFunctions
     /**
      * Register as industry for emission offsetting
      * @param _industryName Name of company/organization
@@ -466,7 +466,7 @@ interface ICarbonRetirement {
         string memory _retirementReason
     ) external returns (uint256);
     
-    // ==== Admin Functions ====
+    //AdminFunctions
     /**
      * Record token retirement for audit/cleanup
      * @param _tokenId Token to retire
@@ -503,7 +503,7 @@ interface ICarbonRetirement {
         view
         returns (uint256, bool);
     
-    // ==== Query Functions ====
+    //QueryFunctions
     function getRetirementRecord(uint256 _retirementId) external view returns (
         uint256 retirementId,
         address offsetter,
@@ -548,7 +548,7 @@ interface ICarbonRetirement {
     function getCurrentFinancialYear() external view returns (uint256);
 }
 
-// ==================== USAGE PATTERNS ====================
+//USAGE PATTERNS
 
 /**
  * COMPLETE FLOW EXAMPLE:

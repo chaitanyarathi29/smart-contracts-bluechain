@@ -349,19 +349,19 @@ CarbonRetirement ────────┘
 
 ## Testing Scenarios Covered
 
-✅ **Scenario 1: Happy Path**
+ **Scenario 1: Happy Path**
 - Project registration → MRV submission → Verification → Token minting → Trading → Offset
 
-✅ **Scenario 2: Validator Slashing**
+ **Scenario 2: Validator Slashing**
 - Dishonest validator → Incorrect approval → Admin rejection → Slashing → 32 ETH lost
 
-✅ **Scenario 3: Annual Expiration**
+ **Scenario 3: Annual Expiration**
 - Multi-year offsets → Year-end expiration → Credits expire → No carry-forward
 
-✅ **Scenario 4: Price Impact**
+ **Scenario 4: Price Impact**
 - Liquidity pool → Large swap → Price slippage → Market impact
 
-✅ **Scenario 5: Consensus Failure**
+ **Scenario 5: Consensus Failure**
 - Validator 1 approves → Validator 2 rejects → No consensus → Block rejected
 
 ---
@@ -432,14 +432,14 @@ CarbonRetirement ────────┘
 
 ## Key Achievements
 
-✅ **Complete end-to-end system** - From registration to offset retirement
-✅ **ML-powered verification** - 4-stage pipeline with environmental data
-✅ **Stake-based consensus** - Economic incentives for honest validation
-✅ **Decentralized trading** - No intermediaries, peer-to-peer via AMM
-✅ **Immutable records** - Blockchain-based audit trail
-✅ **Annual expiration** - Prevents credit hoarding and ensures urgency
-✅ **Regulatory ready** - Whitelisting and access controls built-in
-✅ **Production code** - 3,000+ lines of tested, documented Solidity
+ **Complete end-to-end system** - From registration to offset retirement
+ **ML-powered verification** - 4-stage pipeline with environmental data
+ **Stake-based consensus** - Economic incentives for honest validation
+ **Decentralized trading** - No intermediaries, peer-to-peer via AMM
+ **Immutable records** - Blockchain-based audit trail
+ **Annual expiration** - Prevents credit hoarding and ensures urgency
+ **Regulatory ready** - Whitelisting and access controls built-in
+ **Production code** - 3,000+ lines of tested, documented Solidity
 
 ---
 
@@ -487,4 +487,4 @@ For questions or support, refer to:
 - **Integration**: INTEGRATION_API.sol
 - **Quick Start**: README.md
 
-Good luck with Aeris! 🌍♻️
+Good luck with Aeris!

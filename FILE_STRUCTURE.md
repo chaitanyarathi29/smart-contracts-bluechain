@@ -11,14 +11,14 @@ smart-contracts-bluechain/
 ├── 📄 FILE_STRUCTURE.md              # This file
 │
 ├── Smart Contracts (Main)
-│   ├── 🔵 ProjectRegistry.sol        # Step 1: Identity Management
-│   ├── 🟢 MRVVerification.sol        # Step 2-3: ML Verification & Consensus
-│   ├── 🟡 CarbonToken.sol            # Step 4: Carbon Credit Tokens (ERC-20)
-│   ├── 🟣 ValidatorStaking.sol       # Validator Registration (32 ETH)
-│   ├── 🔴 PermissionedAMM.sol        # Step 5: Decentralized Trading
-│   ├── 🟠 CarbonRetirement.sol       # Step 6-7: Token Burning & Offsets
-│   ├── 🌐 AerisSystemOrchestrator.sol # System Initialization
-│   ├── ✨ Aeris.sol                   # Branded Token (Aeris)
+│   ├──  ProjectRegistry.sol        # Step 1: Identity Management
+│   ├──  MRVVerification.sol        # Step 2-3: ML Verification & Consensus
+│   ├──  CarbonToken.sol            # Step 4: Carbon Credit Tokens (ERC-20)
+│   ├──  ValidatorStaking.sol       # Validator Registration (32 ETH)
+│   ├──  PermissionedAMM.sol        # Step 5: Decentralized Trading
+│   ├──  CarbonRetirement.sol       # Step 6-7: Token Burning & Offsets
+│   ├──  AerisSystemOrchestrator.sol # System Initialization
+│   ├──  Aeris.sol                   # Branded Token (Aeris)
 │
 ├── Legacy/Reference
 │   └── 📄 registry.sol               # Base ERC20 template (reference)
@@ -113,7 +113,7 @@ smart-contracts-bluechain/
 // - whitelistGenerator()   [Admin]
 // - whitelistVerifier()    [Admin]
 ```
-**Status**: ✅ Complete and Documented
+**Status**: Complete and Documented
 
 #### **CarbonToken.sol** (350+ lines)
 ```solidity
@@ -125,7 +125,7 @@ smart-contracts-bluechain/
 // - approve()              [Standard ERC20]
 // - setVerificationContract() [Admin]
 ```
-**Status**: ✅ Complete and Documented
+**Status**: Complete and Documented
 
 #### **ValidatorStaking.sol** (450+ lines)
 ```solidity
@@ -136,7 +136,7 @@ smart-contracts-bluechain/
 // - withdrawStake()        [Validator]
 // - deactivateValidator()  [Admin]
 ```
-**Status**: ✅ Complete and Documented
+**Status**: Complete and Documented
 
 ---
 
@@ -152,7 +152,7 @@ smart-contracts-bluechain/
 // - rejectMRVBlock()       [Admin]
 // - slashValidator()       [Auto-triggered]
 ```
-**Status**: ✅ Complete and Documented
+**Status**: Complete and Documented
 
 ---
 
@@ -168,7 +168,7 @@ smart-contracts-bluechain/
 // - swap()                 [Any participant]
 // - whitelistToken()       [Admin]
 ```
-**Status**: ✅ Complete and Documented
+**Status**: Complete and Documented
 
 #### **CarbonRetirement.sol** (550+ lines)
 ```solidity
@@ -179,7 +179,7 @@ smart-contracts-bluechain/
 // - expireAnnualOffset()   [Admin]
 // - auditIndustryOffsets() [Admin]
 ```
-**Status**: ✅ Complete and Documented
+**Status**: Complete and Documented
 
 ---
 
@@ -195,7 +195,7 @@ smart-contracts-bluechain/
 // - linkAllContracts()    [Admin - Phase 4]
 // - registerMLModel()     [Admin]
 ```
-**Status**: ✅ Complete and Documented
+**Status**: Complete and Documented
 
 #### **Aeris.sol** (20 lines)
 ```solidity
@@ -203,24 +203,24 @@ smart-contracts-bluechain/
 // Token: "Aeris Carbon Credit" (ACC)
 // Symbol: "ACC"
 ```
-**Status**: ✅ Complete and Documented
+**Status**: Complete and Documented
 
 ---
 
-## 📊 Code Statistics
+##  Code Statistics
 
 ### Smart Contracts Summary
 | Contract | Lines | Status | Purpose |
 |----------|-------|--------|---------|
-| ProjectRegistry.sol | 520 | ✅ Complete | Entity registration |
-| MRVVerification.sol | 600+ | ✅ Complete | ML verification |
-| CarbonToken.sol | 350+ | ✅ Complete | ERC-20 token |
-| ValidatorStaking.sol | 450+ | ✅ Complete | Validator mgmt |
-| PermissionedAMM.sol | 700+ | ✅ Complete | DEX trading |
-| CarbonRetirement.sol | 550+ | ✅ Complete | Token burning |
-| AerisSystemOrchestrator.sol | 400+ | ✅ Complete | System init |
-| Aeris.sol | 20 | ✅ Complete | Branded token |
-| **TOTAL** | **3,590+** | ✅ | Complete ecosystem |
+| ProjectRegistry.sol | 520 | Complete | Entity registration |
+| MRVVerification.sol | 600+ | Complete | ML verification |
+| CarbonToken.sol | 350+ | Complete | ERC-20 token |
+| ValidatorStaking.sol | 450+ | Complete | Validator mgmt |
+| PermissionedAMM.sol | 700+ | Complete | DEX trading |
+| CarbonRetirement.sol | 550+ | Complete | Token burning |
+| AerisSystemOrchestrator.sol | 400+ | Complete | System init |
+| Aeris.sol | 20 | Complete | Branded token |
+| **TOTAL** | **3,590+** | | Complete ecosystem |
 
 ### Documentation Summary
 | Document | Lines | Audience |
@@ -240,9 +240,9 @@ smart-contracts-bluechain/
 
 ---
 
-## 🎯 Development Status
+## Development Status
 
-### Completed ✅
+### Completed 
 - [x] All 8 smart contracts implemented
 - [x] Complete event logging
 - [x] Access control on all functions
@@ -265,7 +265,7 @@ smart-contracts-bluechain/
 
 ---
 
-## 🚀 How to Use These Files
+## How to Use These Files
 
 ### For Quick Understanding
 1. Start with **README.md** (5 min read)
@@ -289,7 +289,7 @@ smart-contracts-bluechain/
 
 ---
 
-## 📋 Contract Dependencies
+## Contract Dependencies
 
 ```
 ProjectRegistry
@@ -307,7 +307,7 @@ ValidatorStaking ← (called by: MRVVerification)
 
 ---
 
-## 🔄 Deployment Order
+## Deployment Order
 
 **Phase 1 (Week 1): Core Contracts**
 1. Deploy ProjectRegistry
@@ -331,7 +331,7 @@ ValidatorStaking ← (called by: MRVVerification)
 
 ---
 
-## 💾 File Locations
+## File Locations
 
 ### In This Directory
 ```
